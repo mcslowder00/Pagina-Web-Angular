@@ -10,6 +10,8 @@ import { WomenComponent } from './women/women.component';
 import { AccesoriesComponent } from './accesories/accesories.component';
 import { HomeComponent } from './home/home.component';
 import { FourZeroFourComponent } from './four-zero-four/four-zero-four.component';
+import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { FourZeroFourComponent } from './four-zero-four/four-zero-four.component
     AccesoriesComponent,
     HomeComponent,
     FourZeroFourComponent,
+    ShoppingCartComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
