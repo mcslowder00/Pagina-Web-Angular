@@ -6,9 +6,9 @@
  Licensed under  MIT 
 \* * * * * * * * * * * * * * * * * * * * */
 @charset "UTF-8";
-body {
+/*body {
   margin: 0;
-}
+}*/
 
 .rk-container {
   margin-right: auto;
