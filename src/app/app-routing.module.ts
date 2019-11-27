@@ -6,15 +6,18 @@ import { MenComponent } from './men/men.component';
 import { WomenComponent } from './women/women.component';
 import { AccesoriesComponent } from './accesories/accesories.component';
 import { HomeComponent } from './home/home.component';
+import { FourZeroFourComponent } from './four-zero-four/four-zero-four.component';
 
 const routes: Routes = [
 
+  {path : '' , component : HomeComponent},
   {path : 'Home' , component : HomeComponent},
-  {path : 'Niños' , component : BoysComponent},
-  {path : 'Niñas' , component : GirlsComponent},
-  {path : 'Hombres' , component : MenComponent},
-  {path : 'Muejres' , component : WomenComponent},
-  {path : 'Accesorios' , component : AccesoriesComponent}
+  {path : 'Boys' , component : BoysComponent},
+  {path : 'Girls' , component : GirlsComponent},
+  {path : 'Men' , component : MenComponent},
+  {path : 'Women' , component : WomenComponent},
+  {path : 'Accesories' , component : AccesoriesComponent},
+  {path : '**' , component: FourZeroFourComponent}
 
 ];
 
