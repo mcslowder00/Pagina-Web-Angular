@@ -1,40 +1,36 @@
-
-  
-
-  <header class="header">
-    <div class="principal">
+<header class="header">
+  <div class="principal">
     <img src="assets/Imagenes/camisa.png" alt="camisa">
-     <div class="container logo-nav-container">
-       <a  routerLink = "Home" class="logo">Tienda</a>
-       <nav class="navigation">
-         <ul>
-           <li><a routerLink="Boys">Niños</a></li>
-           <li><a routerLink="Girls">Niñas</a></li>
-           <li><a routerLink="Men">Hombre</a></li>
-           <li><a routerLink="Women">Mujer</a></li>
-           <li><a routerLink="Accesories">Accesorios</a></li>
-           <li><a id="Cart" routerLink="shopingCart">Carro</a></li>
-           <li><a id="Login" routerLink="Login">Login</a></li>
-         </ul>
-       </nav>
-     </div>
-   </div>
-   </header>
- 
-   <main>
- 
-     <div class="principal">
- 
-      <router-outlet></router-outlet>
- 
-     </div>
- 
- 
-   </main>
- 
-   <footer>
- 
-     <h3>Derechos Reservados Sebastian Rios</h3>
- 
-   </footer>
- 
+    <div class="container logo-nav-container">
+      <a routerLink="Home" class="logo">Tienda</a>
+      <nav class="navigation">
+        <ul>
+          <li><a routerLink="Boys">Niños</a></li>
+          <li><a routerLink="Girls">Niñas</a></li>
+          <li><a routerLink="Men">Hombre</a></li>
+          <li><a routerLink="Women">Mujer</a></li>
+          <li><a routerLink="Accesories">Accesorios</a></li>
+          <li><a id="Cart" routerLink="shopingCart">Carro</a></li>
+          <li><a id="Login" routerLink="Login">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <div class="principal">
+
+    <router-outlet></router-outlet>
+
+  </div>
+
+
+</main>
+
+<footer>
+
+  <h3>Derechos Reservados Sebastian Rios</h3>
+
+</footer>

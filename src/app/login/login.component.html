@@ -1,16 +1,36 @@
-
 <div class="wrapper fadeInDown">
-    <div id="formContent">  
+  <div id="formContent">
 
-      <form>
-        <input type="text" id="login" class="fadeIn second" name="login" placeholder="Usuario">
-        <input type="text" id="password" class="fadeIn third" name="login" placeholder="Contraseña">
-        <input type="submit" class="fadeIn fourth" value="Log In">
-      </form>
-  
-      <div id="formFooter">
-        <a class="underlineHover" href="#">¿Olvidaste tu contraseña?</a>
+    <form [formGroup]="LoginForm" (ngSubmit)='onSaveForm()'>
+
+      <input type="text" formControlName='user' id="login" class="fadeIn second" name="login" placeholder="Usuario">
+      <div class="Caution-container" *ngIf="user.invalid && (user.dirty || user.touched)">
+        <div class="requieredCaution" *ngIf="user.errors.required">
+          <p> Campo obligatorio </p>
+        </div>
+       <!-- <div class="Caution">
+          <p> no registrado </p>
+        </div>-->
       </div>
-  
+
+      <input type="text" formControlName='password' id="password" class="fadeIn third" name="login"
+        placeholder="Contraseña">
+
+        <div class="Caution-container" *ngIf="password.invalid && (password.dirty || password.touched)">
+            <div class="requieredCaution" *ngIf="password.errors.required">
+              <p> Campo obligatorio </p>
+            </div>
+           <!-- <div class="Caution">
+              <p> no registrado </p>
+            </div>-->
+          </div>
+
+      <input type="submit" class="fadeIn fourth">
+    </form>
+
+    <div id="formFooter">
+      <a class="underlineHover" href="#">¿Olvidaste tu contraseña?</a>
     </div>
+
   </div>
+</div>

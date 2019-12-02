@@ -27,7 +27,8 @@
     justify-content: center;
     width: 100%;
     min-height: 100%;
-    padding: 20px;
+    padding: 100px;
+    padding-left: 0;
   }
   
   #formContent {
@@ -42,6 +43,7 @@
     -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
     box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
     text-align: center;
+    padding-top: 30px;
   }
   
   #formFooter {
@@ -142,8 +144,8 @@
   .fadeInDown {
     -webkit-animation-name: fadeInDown;
     animation-name: fadeInDown;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
   }
@@ -246,4 +248,12 @@
       outline: none;
   } 
   
+  .Caution-container{
+    padding: 3px;
+    color: red;
+    opacity: 50%;
+    font-family: Arial;
+    font-size: 13px;
+
+  }
  
